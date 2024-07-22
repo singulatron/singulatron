@@ -705,6 +705,11 @@ const docTemplate = `{
         },
         "/generic/delete": {
             "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
                 "description": "Removes a generic object from the system based on the provided conditions. Requires authorization and user authentication.",
                 "consumes": [
                     "application/json"
@@ -810,6 +815,11 @@ const docTemplate = `{
         },
         "/generic/update": {
             "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
                 "description": "Updates objects in a specified table based on provided conditions. Requires authorization and user authentication.",
                 "consumes": [
                     "application/json"

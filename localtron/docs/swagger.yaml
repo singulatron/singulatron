@@ -971,6 +971,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/generictypes.ErrorResponse'
+      security:
+      - BearerAuth: []
       summary: Delete a generic object
       tags:
       - generic
@@ -1042,6 +1044,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/generictypes.ErrorResponse'
+      security:
+      - BearerAuth: []
       summary: Update generic objects based on conditions
       tags:
       - generic
